@@ -7,7 +7,7 @@ const buildUrl = (endpoint) => {
   }
   const codeSpaceName = process.env.REACT_APP_CODESPACE_NAME;
   if (codeSpaceName) {
-    return `https://${codeSpaceName}-8000.app.github.dev/api/${endpoint}/`;
+    return `https://${codeSpaceName}-8000.app.github.dev/api/users/`;
   }
   return `http://localhost:8000/api/${endpoint}/`;
 };
