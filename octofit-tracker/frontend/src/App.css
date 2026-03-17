@@ -1,0 +1,131 @@
+:root {
+  --app-bg-light: #e9f1fb;
+  --app-bg-dark: #0f172a;
+  --app-panel: #ffffff;
+  --app-heading: #0d3f78;
+  --app-text: #1e3a5f;
+  --app-primary: #1d4ed8;
+  --app-secondary: #0f7bf8;
+  --app-button: #1f64d1;
+  --app-button-hover: #163f8a;
+  --app-link: #1d4ed8;
+  --app-border: #dbe6f1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top left, #dceafe 0%, #e9f1fb 35%, #f8fbff 100%);
+  color: var(--app-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #1e40af, #2563eb);
+}
+
+.navbar .nav-link {
+  color: #f8fafc !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #dbeafe !important;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.octofitapp-small-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: white;
+  padding: 2px;
+}
+
+.card {
+  background: var(--app-panel);
+  border: 1px solid var(--app-border);
+  border-radius: 0.8rem;
+  box-shadow: 0 0.7rem 1.5rem rgba(37, 99, 235, 0.15);
+}
+
+.card-header {
+  background-color: #ebf4ff;
+  border-bottom: 1px solid #cfe2ff;
+}
+
+.card-title,
+.card-header h2 {
+  color: var(--app-heading);
+}
+
+.table {
+  border: 1px solid #bfdbfe;
+}
+
+.table thead {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.table tbody tr:hover {
+  background-color: #e0efff;
+}
+
+.btn-primary {
+  background-color: var(--app-button);
+  border-color: var(--app-button);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--app-button-hover);
+  border-color: var(--app-button-hover);
+}
+
+.btn-secondary,
+.btn-outline-light,
+.btn-success {
+  transition: all 0.25s ease;
+}
+
+.btn-link {
+  color: var(--app-link);
+}
+
+.btn-link:hover {
+  color: #0f68d0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--app-heading);
+}
+
+a {
+  color: var(--app-link);
+}
+
+a:hover {
+  color: #0f54bf;
+}
+
+.modal-backdrop {
+  z-index: 1040;
+}
+
+.modal {
+  z-index: 1050;
+  color: var(--app-text);
+}
+
